@@ -9,7 +9,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["myscript.js", "jquery.js", "xpath-dom.min.js"],
+      "js": ["jquery.js", "xpath-dom.min.js", "myscript.js"],
       "all_frames": true,
       "run_at": "document_start"
     }

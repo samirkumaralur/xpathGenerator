@@ -4,6 +4,5 @@ document.addEventListener("contextmenu", function (event) {
 });
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  console.log(selectedElement);
-  console.log($(selectedElement).attr("class"));
+  console.log(xpath.getUniqueXPath(selectedElement));
 });
