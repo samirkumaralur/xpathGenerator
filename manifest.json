@@ -1,0 +1,21 @@
+{
+  "name": "Sentiment_Analyser",
+  "version": "1.0",
+  "description": "By Samir",
+  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts":[
+	{
+		"matches":["http://*/*","https://*/*"],
+		"js":[
+			"myscript.js",
+			"jquery.js"
+		],
+		"all_frames":true,
+		"run_at":"document_start"
+	}
+  ],
+  "manifest_version": 2
+}
